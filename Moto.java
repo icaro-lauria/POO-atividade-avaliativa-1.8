@@ -13,5 +13,8 @@ public class Moto extends Veiculo{
 	public double calcularRevenda() {
 		return this.valorBase - ano*0.05*valorBase;
 	}
-
+	
+	public int getCilindrada() {
+		return this.cilindrada;
+	}
 }
