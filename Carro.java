@@ -2,7 +2,7 @@ package com.veiculos;
 
 public class Carro extends Veiculo{
 
-	int qtdPortas;
+	private int qtdPortas;
 	
 	public Carro(String marca, String modelo, int ano, double valorBase, int qtdPortas) {
 		super(marca, modelo, ano, valorBase);
@@ -14,4 +14,7 @@ public class Carro extends Veiculo{
 		return this.valorBase - ano*0.1*valorBase;
 	}
 
+	public int getQtdPortas() {
+		return this.qtdPortas;
+	}
 }
